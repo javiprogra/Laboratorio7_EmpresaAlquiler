@@ -122,7 +122,7 @@
             Controls.Add(textBoxNombre);
             Name = "FormClientes";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormClientes";
+            Text = "Agregar Clientes";
             ResumeLayout(false);
             PerformLayout();
         }

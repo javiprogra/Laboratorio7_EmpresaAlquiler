@@ -159,7 +159,7 @@
             Controls.Add(label1);
             Name = "FormAlquiler";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormAlquiler";
+            Text = "Guardar un Alquiler";
             ResumeLayout(false);
             PerformLayout();
         }

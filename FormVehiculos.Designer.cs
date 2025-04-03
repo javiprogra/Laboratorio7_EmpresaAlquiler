@@ -160,7 +160,7 @@
             Controls.Add(label1);
             Name = "FormVehiculos";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormVehiculos";
+            Text = "Agregar Vehiculo";
             ResumeLayout(false);
             PerformLayout();
         }
