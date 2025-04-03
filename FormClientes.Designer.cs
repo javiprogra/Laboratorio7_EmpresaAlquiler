@@ -107,6 +107,7 @@
             buttonGuardar.TabIndex = 10;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
+            buttonGuardar.Click += buttonGuardar_Click;
             // 
             // buttonClose
             // 
@@ -135,6 +136,7 @@
             Name = "FormClientes";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar Clientes";
+            Load += FormClientes_Load;
             ResumeLayout(false);
             PerformLayout();
         }

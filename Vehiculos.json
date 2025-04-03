@@ -1,0 +1,16 @@
+[
+  {
+    "Placa": "3K27JT2",
+    "Marca": "Toyota",
+    "Modelo": "Yaris",
+    "Color": "Negro",
+    "PrecioKilometro": 2.50
+  },
+  {
+    "Placa": "7BC452T",
+    "Marca": "Chevrolet",
+    "Modelo": "Camaro",
+    "Color": "Azul",
+    "PrecioKilometro": 10.50
+  }
+]

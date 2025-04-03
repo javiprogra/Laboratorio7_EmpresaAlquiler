@@ -100,7 +100,9 @@
             // 
             // textBoxPlaca
             // 
+            textBoxPlaca.CharacterCasing = CharacterCasing.Upper;
             textBoxPlaca.Location = new Point(286, 132);
+            textBoxPlaca.MaxLength = 7;
             textBoxPlaca.Name = "textBoxPlaca";
             textBoxPlaca.Size = new Size(100, 23);
             textBoxPlaca.TabIndex = 10;
@@ -141,6 +143,7 @@
             buttonGuardar.TabIndex = 15;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
+            buttonGuardar.Click += buttonGuardar_Click;
             // 
             // buttonClose
             // 
@@ -173,6 +176,7 @@
             Name = "FormVehiculos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar Vehiculo";
+            Load += FormVehiculos_Load;
             ResumeLayout(false);
             PerformLayout();
         }

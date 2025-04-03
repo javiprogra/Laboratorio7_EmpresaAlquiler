@@ -132,6 +132,7 @@
             buttonGuardar.TabIndex = 16;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
+            buttonGuardar.Click += buttonGuardar_Click;
             // 
             // comboBoxCliente
             // 
@@ -172,6 +173,7 @@
             Name = "FormAlquiler";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Guardar un Alquiler";
+            Load += FormAlquiler_Load;
             ResumeLayout(false);
             PerformLayout();
         }
