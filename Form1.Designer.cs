@@ -88,6 +88,7 @@
             buttonReporte.TabIndex = 4;
             buttonReporte.Text = "Reportes";
             buttonReporte.UseVisualStyleBackColor = true;
+            buttonReporte.Click += buttonReporte_Click;
             // 
             // buttonVC
             // 
@@ -97,6 +98,7 @@
             buttonVC.TabIndex = 5;
             buttonVC.Text = "Vehiculos y Clientes";
             buttonVC.UseVisualStyleBackColor = true;
+            buttonVC.Click += buttonVC_Click;
             // 
             // FormMenu
             // 

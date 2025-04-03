@@ -24,5 +24,17 @@ namespace Laboratorio7_EmpresaAlquiler
             FormAlquiler formAlquiler = new FormAlquiler();
             formAlquiler.Show();
         }
+
+        private void buttonReporte_Click(object sender, EventArgs e)
+        {
+            FormReporte formReporte = new FormReporte();
+            formReporte.Show();
+        }
+
+        private void buttonVC_Click(object sender, EventArgs e)
+        {
+            FormVC formVC = new FormVC();
+            formVC.Show();
+        }
     }
 }

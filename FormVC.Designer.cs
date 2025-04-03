@@ -33,6 +33,7 @@
             dataGridView2 = new DataGridView();
             label2 = new Label();
             label3 = new Label();
+            buttonClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -81,11 +82,22 @@
             label3.TabIndex = 11;
             label3.Text = "Clientes";
             // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(646, 381);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(94, 40);
+            buttonClose.TabIndex = 12;
+            buttonClose.Text = "Regresar";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
+            // 
             // FormVC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonClose);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(dataGridView2);
@@ -107,5 +119,6 @@
         private DataGridView dataGridView2;
         private Label label2;
         private Label label3;
+        private Button buttonClose;
     }
 }

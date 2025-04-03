@@ -40,6 +40,7 @@
             monthCalendarDevolucion = new MonthCalendar();
             buttonGuardar = new Button();
             comboBoxCliente = new ComboBox();
+            buttonClose = new Button();
             SuspendLayout();
             // 
             // label1
@@ -125,9 +126,9 @@
             // 
             // buttonGuardar
             // 
-            buttonGuardar.Location = new Point(178, 263);
+            buttonGuardar.Location = new Point(607, 388);
             buttonGuardar.Name = "buttonGuardar";
-            buttonGuardar.Size = new Size(75, 43);
+            buttonGuardar.Size = new Size(75, 40);
             buttonGuardar.TabIndex = 16;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
@@ -140,11 +141,22 @@
             comboBoxCliente.Size = new Size(100, 23);
             comboBoxCliente.TabIndex = 17;
             // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(688, 388);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(94, 40);
+            buttonClose.TabIndex = 18;
+            buttonClose.Text = "Regresar";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
+            // 
             // FormAlquiler
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonClose);
             Controls.Add(comboBoxCliente);
             Controls.Add(buttonGuardar);
             Controls.Add(monthCalendarDevolucion);
@@ -178,5 +190,6 @@
         private MonthCalendar monthCalendarDevolucion;
         private Button buttonGuardar;
         private ComboBox comboBoxCliente;
+        private Button buttonClose;
     }
 }

@@ -40,6 +40,7 @@
             textBoxColor = new TextBox();
             textBoxPrecioKm = new TextBox();
             buttonGuardar = new Button();
+            buttonClose = new Button();
             SuspendLayout();
             // 
             // label1
@@ -134,18 +135,29 @@
             // 
             // buttonGuardar
             // 
-            buttonGuardar.Location = new Point(409, 299);
+            buttonGuardar.Location = new Point(587, 386);
             buttonGuardar.Name = "buttonGuardar";
-            buttonGuardar.Size = new Size(86, 45);
+            buttonGuardar.Size = new Size(86, 40);
             buttonGuardar.TabIndex = 15;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
+            // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(679, 386);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(94, 40);
+            buttonClose.TabIndex = 16;
+            buttonClose.Text = "Regresar";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
             // 
             // FormVehiculos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonClose);
             Controls.Add(buttonGuardar);
             Controls.Add(textBoxPrecioKm);
             Controls.Add(textBoxColor);
@@ -179,5 +191,6 @@
         private TextBox textBoxColor;
         private TextBox textBoxPrecioKm;
         private Button buttonGuardar;
+        private Button buttonClose;
     }
 }

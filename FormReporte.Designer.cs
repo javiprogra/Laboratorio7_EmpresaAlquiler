@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             dataGridView1 = new DataGridView();
+            buttonClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,11 +52,22 @@
             dataGridView1.Size = new Size(392, 241);
             dataGridView1.TabIndex = 7;
             // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(670, 383);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(94, 40);
+            buttonClose.TabIndex = 13;
+            buttonClose.Text = "Regresar";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
+            // 
             // FormReporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonClose);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "FormReporte";
@@ -70,5 +82,6 @@
 
         private Label label1;
         private DataGridView dataGridView1;
+        private Button buttonClose;
     }
 }

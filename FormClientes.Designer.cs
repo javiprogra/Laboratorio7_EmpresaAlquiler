@@ -36,6 +36,7 @@
             maskedTextBoxNit = new MaskedTextBox();
             textBoxDireccion = new TextBox();
             buttonGuardar = new Button();
+            buttonClose = new Button();
             SuspendLayout();
             // 
             // textBoxNombre
@@ -100,18 +101,29 @@
             // 
             // buttonGuardar
             // 
-            buttonGuardar.Location = new Point(411, 230);
+            buttonGuardar.Location = new Point(570, 365);
             buttonGuardar.Name = "buttonGuardar";
-            buttonGuardar.Size = new Size(85, 45);
+            buttonGuardar.Size = new Size(85, 40);
             buttonGuardar.TabIndex = 10;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
+            // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(661, 365);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(94, 40);
+            buttonClose.TabIndex = 13;
+            buttonClose.Text = "Regresar";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
             // 
             // FormClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonClose);
             Controls.Add(buttonGuardar);
             Controls.Add(textBoxDireccion);
             Controls.Add(maskedTextBoxNit);
@@ -137,5 +149,6 @@
         private MaskedTextBox maskedTextBoxNit;
         private TextBox textBoxDireccion;
         private Button buttonGuardar;
+        private Button buttonClose;
     }
 }
