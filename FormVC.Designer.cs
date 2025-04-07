@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dataGridView1 = new DataGridView();
-            dataGridView2 = new DataGridView();
+            dataGridViewVehiculos = new DataGridView();
+            dataGridViewClientes = new DataGridView();
             label2 = new Label();
             label3 = new Label();
             buttonClose = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVehiculos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewClientes).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -48,21 +48,21 @@
             label1.TabIndex = 7;
             label1.Text = "Vehiculos y Clientes";
             // 
-            // dataGridView1
+            // dataGridViewVehiculos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(66, 135);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(316, 209);
-            dataGridView1.TabIndex = 8;
+            dataGridViewVehiculos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewVehiculos.Location = new Point(66, 135);
+            dataGridViewVehiculos.Name = "dataGridViewVehiculos";
+            dataGridViewVehiculos.Size = new Size(316, 209);
+            dataGridViewVehiculos.TabIndex = 8;
             // 
-            // dataGridView2
+            // dataGridViewClientes
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(424, 135);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(316, 209);
-            dataGridView2.TabIndex = 9;
+            dataGridViewClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewClientes.Location = new Point(424, 135);
+            dataGridViewClientes.Name = "dataGridViewClientes";
+            dataGridViewClientes.Size = new Size(316, 209);
+            dataGridViewClientes.TabIndex = 9;
             // 
             // label2
             // 
@@ -100,14 +100,15 @@
             Controls.Add(buttonClose);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewClientes);
+            Controls.Add(dataGridViewVehiculos);
             Controls.Add(label1);
             Name = "FormVC";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVC";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            Load += FormVC_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVehiculos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewClientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -115,8 +116,8 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
+        private DataGridView dataGridViewVehiculos;
+        private DataGridView dataGridViewClientes;
         private Label label2;
         private Label label3;
         private Button buttonClose;

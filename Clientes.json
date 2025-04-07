@@ -1,17 +1,1 @@
-[
-  {
-    "Nit": "2312512312312",
-    "Nombre": "Carlos Castillo",
-    "Direccion": "Zona 7 Casa 3"
-  },
-  {
-    "Nit": "2398129839123",
-    "Nombre": "Javier López",
-    "Direccion": "Zona 5 Casa 2"
-  },
-  {
-    "Nit": "8289318723131",
-    "Nombre": "Luis Pérez",
-    "Direccion": "Olintepeque"
-  }
-]
+[{"Nit":"2312512312312","Nombre":"Carlos Castillo","Direccion":"Zona 7 Casa 3"},{"Nit":"2398129839123","Nombre":"Javier López","Direccion":"Zona 5 Casa 2"},{"Nit":"8289318723131","Nombre":"Luis Pérez","Direccion":"Olintepeque"},{"Nit":"1293812931251","Nombre":"Josue Barias","Direccion":"Zona 7 casa 5"}]

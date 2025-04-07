@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dataGridView1 = new DataGridView();
+            dataGridViewReporte = new DataGridView();
             buttonClose = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label2 = new Label();
+            labelKm = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReporte).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -44,13 +46,13 @@
             label1.TabIndex = 6;
             label1.Text = "Alquileres";
             // 
-            // dataGridView1
+            // dataGridViewReporte
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(192, 94);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(392, 241);
-            dataGridView1.TabIndex = 7;
+            dataGridViewReporte.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewReporte.Location = new Point(110, 93);
+            dataGridViewReporte.Name = "dataGridViewReporte";
+            dataGridViewReporte.Size = new Size(544, 241);
+            dataGridViewReporte.TabIndex = 7;
             // 
             // buttonClose
             // 
@@ -62,18 +64,39 @@
             buttonClose.UseVisualStyleBackColor = true;
             buttonClose.Click += buttonClose_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(164, 337);
+            label2.Name = "label2";
+            label2.Size = new Size(224, 15);
+            label2.TabIndex = 14;
+            label2.Text = "Mayor cantidad de kilometros recorridos:";
+            // 
+            // labelKm
+            // 
+            labelKm.AutoSize = true;
+            labelKm.Location = new Point(394, 337);
+            labelKm.Name = "labelKm";
+            labelKm.Size = new Size(38, 15);
+            labelKm.TabIndex = 15;
+            labelKm.Text = "label3";
+            // 
             // FormReporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelKm);
+            Controls.Add(label2);
             Controls.Add(buttonClose);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewReporte);
             Controls.Add(label1);
             Name = "FormReporte";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormReporte";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FormReporte_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReporte).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -81,7 +104,9 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewReporte;
         private Button buttonClose;
+        private Label label2;
+        private Label labelKm;
     }
 }

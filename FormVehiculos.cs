@@ -56,7 +56,7 @@ namespace Laboratorio7_EmpresaAlquiler
                 vehiculosJson.Guardar(archivoVehiculos, vehiculos);
 
                 Limpiar();
-                MessageBox.Show("Se ha añadido el cliente correctamente");
+                MessageBox.Show("Se ha añadido el  correcvehiculotamente");
             }
             else
             {
